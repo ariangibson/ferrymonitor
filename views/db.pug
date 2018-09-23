@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  .container
+    h2= "Database Contents (users):"
+    ul
+      each val, index in results
+        li= index + ': ' + val.first_name + " " + val.last_name + " - " + val.email_address 
